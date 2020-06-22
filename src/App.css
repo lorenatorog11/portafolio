@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+.body{
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navBar{
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 13vh;
+  background-color: #500808;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav{
+  width: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hr{
+  background-color: white;
+  width: 100%;
+  height: 1px;
+  border-radius: 50%;
+  transform: rotate(2deg);
+  margin-top: 5px;
+}
+#welcome-section{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/watercolor-4038455_1920.png);
+  background-size: contain;
+  background-repeat: repeat;
+  position: relative;
+}
+#welcome-section::before{
+  content: "";
+  position: absolute ;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.7;
+}
+#div-welcome{
+  position: relative;
+  text-align: center;
+  width: 70%;
+  border: 2px dashed black ;
+  padding: 15px 30px 15px 30px;
+  font-size: 2rem;
+}
+#textwelcome{
+  font-size: 1.5rem;
+}
+#projects{
+  background-color: #085050;
+  width: 100vw;
+  font-size: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8vh;
+}
+.proyectoR{
+  padding-top: 10%;
+} 
+.cardProyects{
+  background-color: black;
   color: white;
+  border-radius: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.btnVer{
+  background-color: #83b9b9;
+  border: 1px solid #085050;
+  box-shadow: 3px 2px 4px white;
+  color: black;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#profile-link{
+  background-color: #fdf4e78c;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 8% 0% 8%;
+  font-size: 22px;
+  text-align: center;
+}
+#profile-link #invitacion{
+  font-size: 36px;
+  font-style: italic;
+  margin-top: 0px;
+}
+#hr{
+  background-color: brown;
+  border: 3px solid brown;
+  width: 100%;
+}
+#logos{
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin-top: 5%;
+  justify-content: space-evenly;
+}
+.fab{
+  color: black;
+}
+#frase{
+  margin-bottom: 60px;
 }
