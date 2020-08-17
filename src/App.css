@@ -1,5 +1,5 @@
 .body{
-  font-size: 16px;
+  font-size: 14px;
   margin: 0;
   padding: 0;
   width: 100vw;
@@ -52,10 +52,13 @@
   width: 70%;
   border: 2px dashed black ;
   padding: 15px 30px 15px 30px;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  box-sizing: content-box;
+  margin-top: 5%;
 }
-#textwelcome{
-  font-size: 1.5rem;
+.textwelcome{
+  font-size: 1.2rem;
+  margin: 0px;
 }
 #projects{
   background-color: #085050;
@@ -113,3 +116,33 @@
 #frase{
   margin-bottom: 60px;
 }
+#img_me{
+  height: 20vw;
+  width: auto;
+  border-radius: 50%;
+}
+@media all and (min-width: 0px) and (max-width: 720px) { 
+  #div-welcome{
+    margin-top: 10%;
+  }
+  #img_me{
+    height: 30vw;
+  }
+  #div-welcome{
+    font-size: 1.2rem;
+  }
+  .textwelcome{
+    font-size: 1rem;
+  }
+ }
+@media all and (min-width: 720px) and (max-width: 900px) { 
+  #img_me{
+    height: 25vw;
+  }
+  #div-welcome{
+    font-size: 1.4rem;
+  }
+  .textwelcome{
+    font-size: 1.2rem;
+  }
+ }
